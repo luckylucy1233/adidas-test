@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "img-list": "../../components/imgList/imgList"
+  },
+  "enablePullDownRefresh":true,
+  "onReachBottomDistance":50,
+  "backgroundColor":"#fff",
+  "backgroundTextStyle":"dark"
+}

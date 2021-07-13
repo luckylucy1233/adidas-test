@@ -1,0 +1,85 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/7/12 下午5:51:05
+使用方法：
+在 D:\learning\minigroup-test\miniprogram\pages\product\product.wxml 引入模板
+
+```
+<import src="product.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 D:\learning\minigroup-test\miniprogram\pages\product\product.wxss 中引入样式
+```
+@import "./product.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view>
+      <view is="components/searchRoll/searchRoll">
+        <view class="searchRoll--search" style="width:261px;margin:24px 10px 5px 10px">
+          <image class="searchRoll--logo sk-image" mode="heightFix" style="width: 45px;"></image>
+          <view class="searchRoll--box" style="border: none;">
+            <icon class="searchRoll--search-icon sk-image" type="search" color="#EFEFEF"></icon>
+            <view class="searchRoll--ctx">
+              <view class="searchRoll--list-ctx">
+                <view class="searchRoll--list sk-transparent sk-text-18-7500-523 sk-text" data-text="帽子">帽子</view>
+                <view class="searchRoll--list sk-transparent sk-text-18-7500-160 sk-text" data-text="围巾">围巾</view>
+                <view class="searchRoll--list sk-transparent sk-text-18-7500-194 sk-text" data-text="鞋子">鞋子</view>
+                <view class="searchRoll--list sk-transparent sk-text-18-7500-166 sk-text" data-text="大衣">大衣</view>
+                <view class="searchRoll--list sk-transparent sk-text-18-7500-264 sk-text" data-text="帽子">
+                  帽子
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="ctx">
+        <view class="ctx-list">
+          <view is="components/imgList/imgList">
+            <view class="imgList--img-ctx">
+              <image class="imgList--img sk-image" mode="widthFix" style="height: 65.1705px;"></image>
+              <view class="imgList--img-title sk-transparent sk-text-18-7500-93 sk-text" style="background-position-x: 50%;">Gary Jackson</view>
+            </view>
+          </view>
+        </view>
+        <view class="ctx-list">
+          <view is="components/imgList/imgList">
+            <view class="imgList--img-ctx">
+              <image class="imgList--img sk-image" mode="widthFix" style="height: 65.1705px;"></image>
+              <view class="imgList--img-title sk-transparent sk-text-18-7500-1 sk-text" style="background-position-x: 50%;">Jason Taylor</view>
+            </view>
+          </view>
+        </view>
+        <view class="ctx-list">
+          <view is="components/imgList/imgList">
+            <view class="imgList--img-ctx">
+              <image class="imgList--img sk-image" mode="widthFix" style="height: 154.167px;"></image>
+              <view class="imgList--img-title sk-transparent sk-text-18-7500-906 sk-text" style="background-position-x: 50%;">Larry Davis</view>
+            </view>
+          </view>
+        </view>
+        <view class="ctx-list">
+          <view is="components/imgList/imgList">
+            <view class="imgList--img-ctx">
+              <image class="imgList--img sk-image" mode="widthFix" style="height: 693.75px;"></image>
+            </view>
+          </view>
+        </view>
+        <view class="ctx-list"></view>
+        <view class="ctx-list"></view>
+        <view class="ctx-list"></view>
+        <view class="ctx-list">
+          <view is="components/imgList/imgList">
+            <view class="imgList--img-ctx">
+              <image class="imgList--img sk-image" mode="widthFix" style="height: 925px;"></image>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

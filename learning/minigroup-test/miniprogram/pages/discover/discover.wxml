@@ -1,0 +1,21 @@
+<view >
+	<view class="wrap" wx:if="imgsLoaded">
+		<block  wx:for="{{productList}}" wx:for-item="item"  wx:for-index="idx" wx:key="idx">
+			<image src="{{item.img}}" class="img" mode="widthFix" data-img="{{item.img}}" data-idx="{{idx}}" bindload="handerImgLoaded" binderror="handerImgError" style="display:none"></image>
+		</block>
+	<view class="half">
+		<block  wx:for="{{leftImgs}}" wx:for-item="leftItem"  wx:for-index="index" wx:key="index">
+			<img-list src="{{leftItem.img}}"  idx="{{index}}" loaded="{{leftItem.loaded}}" tempthumb="{{leftItem.tempthumb}}" hei="{{leftItem.height}}" mode="heightFix" title="{{leftItem.title}}" class="imgBox">
+			</img-list >
+		</block>
+	</view>
+	<view class="half">
+		<block  wx:for="{{rightImgs}}" wx:for-item="rightItem" wx:for-index="index" wx:key="index">
+			<img-list src="{{rightItem.img}}"  idx="{{index}}" loaded="{{rightItem.loaded}}" tempthumb="{{rightItem.tempthumb}}" hei="{{rightItem.height}}" mode="heightFix" title="{{rightItem.title}}" class="imgBox">
+			</img-list >
+		</block>
+	</view>
+	</view>
+	<view wx-if="{{isAll}}"  class="isAll">到底啦~</view>
+</view>
+

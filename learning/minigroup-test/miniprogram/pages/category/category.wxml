@@ -1,0 +1,21 @@
+<!-- miniprogram/pages/category/category.wxml -->
+<view>
+  <view class="top-search">
+    <search-roll list="{{skeyList}}"></search-roll>
+  </view>
+  <view class="category">
+    <view class="left">
+      <scroll-view scroll-y="true" style="height:{{(windowHeight-navHeight)*2}}rpx;">
+        <view class="type {{activeIndex == 0?'active':''}}" data-id="1" bind:tap="changeType" data-index="{{0}}"><text>推荐</text></view>
+        <block wx:for="{{category}}" wx:key="index">
+          <view class="type {{activeIndex == (index+1)?'active':''}}" data-id="{{item.contentId}}" bind:tap="changeType" data-index="{{index + 1}}"><text>{{item.contentName}}</text></view>
+        </block>
+      </scroll-view>
+    </view>
+    <view class="right">
+      <scroll-view scroll-y="true" style="height:{{(windowHeight-navHeight)*2}}rpx;">
+      
+      </scroll-view>
+    </view>
+  </view>
+</view>

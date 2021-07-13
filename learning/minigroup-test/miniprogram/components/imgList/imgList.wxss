@@ -1,0 +1,14 @@
+/* miniprogram/components/imgList/imgList.wxss */
+.img-ctx{
+    overflow: hidden;
+    margin-bottom: 10rpx;
+    background: #eee;
+}
+.img {
+    width: 100%;
+    display: block;
+}
+.img-title{
+    text-align: center;
+    background-color: #eee;
+}

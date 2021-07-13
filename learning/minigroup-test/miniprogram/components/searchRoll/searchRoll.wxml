@@ -1,0 +1,17 @@
+<!-- components/searchRoll.wxml -->
+<view class="search" style="width:{{navWidth*2-40}}rpx;margin:{{navTop*2}}rpx 20rpx 10rpx 20rpx">
+  <image class="logo" src="../../img/adidas.png" mode="heightFix"/>
+  <view class="box">
+    <icon class="search-icon" type="search"></icon>
+    <view class="ctx">
+      <view class="list-ctx">
+        <block wx:for="{{list}}" wx:for-item="item" wx:key="index">
+          <view class="list" bind:tap="handler" data-text="{{item.txt}}">{{item.txt}}</view>
+        </block>
+        <view class="list" bind:tap="handler" data-text="{{list[0].txt}}">
+          {{list[0].txt}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

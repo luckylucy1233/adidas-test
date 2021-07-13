@@ -1,0 +1,12 @@
+<!-- miniprogram/pages/product.wxml -->
+<!-- ，如果使用纯css写瀑布流，则每一块都是从上往下排列，不能做到从左到右排列，并且不会识别哪一块图片放在哪个地方合适，若是再配合动态加载，效果会特别不好，比如最后一个留白多。 -->
+<view>
+	<search-roll list="{{skeyList}}" bind:event="searchJump" ></search-roll>
+	<view class="ctx">
+		<view class="ctx-list" wx:for="{{productList}}" wx:for-index="idx" wx:for-item="item" wx:key="idx">
+			<img-list src="{{item.img}}"  idx="{{idx}}" title="{{item.title}}" loaded="{{item.loaded}}" tempthumb="{{item.tempthumb}}" bind:myevent="handerImgLoaded" ></img-list >
+			<view class="circle" hidden="{{item.loaded}}"></view>
+		</view>
+	</view>
+	<view wx-if="{{isAll}}" class="isAll">到底啦~</view>
+</view>

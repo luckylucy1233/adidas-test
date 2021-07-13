@@ -1,0 +1,6 @@
+<!-- miniprogram/components/imgList/imgList.wxml -->
+<view class="img-ctx">
+  <image src="{{src}}" class="img" id="index{{idx}}" data-img="{{src}}" data-idx="{{idx}}" bindload="imgOnLoad" style="display:none"></image>
+  <image src="{{loaded?src:tempthumb}}" class="img"  style="height:{{hei?hei:'auto'}}" mode="{{mode}}"></image>
+  <view class="img-title">{{title}}</view>
+</view>

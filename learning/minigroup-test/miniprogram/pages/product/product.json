@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "img-list": "../../components/imgList/imgList",
+    "search-roll": "../../components/searchRoll/searchRoll"
+  },
+  "enablePullDownRefresh":true,
+  "onReachBottomDistance":100,
+  "backgroundColor":"#fff",
+  "backgroundTextStyle":"dark",
+  "navigationStyle":"custom"
+}

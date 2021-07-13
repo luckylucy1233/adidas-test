@@ -1,0 +1,18 @@
+<!-- miniprogram/pages/search/search.wxml -->
+<view class="search-page">
+  <view class="search-box">
+    <mp-searchbar value="{{skey}}" placeholder="搜索" focus="{{true}}" cancel="{{false}}" bindinput="setValue" ext-class="ext-bar" class="bar"></mp-searchbar>
+    <view bind:tap="search" class="btn">搜索</view>
+  </view>
+  <view class="search-history" wx:if="{{skeyHistory.length > 0}}">
+    <view class="title">
+      <text>搜索历史</text>
+      <icon class="clear-icon" type="clear" bind:tap="clear" size="20"></icon>
+    </view>
+    <view class="his-ctx">
+      <block wx:for="{{skeyHistory}}" wx:for-item="item" wx:key="index">
+        <view class="his-list">{{item}}</view>
+      </block>
+    </view>
+  </view>
+</view>
